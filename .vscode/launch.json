@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug_profile_1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}\\venv"
+            },
+            "cwd": "${workspaceFolder}\\xxxxxxxx"
+        },
+        {
+            "name": "debug_profile_2",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}\\venv"
+            },
+            "cwd": "${workspaceFolder}\\xxxxxxxx"
+        },
+        {
+            "justMyCode": false,
+            "name": "Ancient Warmth / Django-Oscar",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "python": "${env:oscar}/bin/python",
+            "args": [
+                "runserver",
+                "--noreload",
+                "0.0.0.0:8001",
+            ],
+            "django": true
+        }
+    ]
+}

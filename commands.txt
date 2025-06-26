@@ -1,0 +1,13 @@
+
+py -m venv venv\ 
+venv\Scripts\activate
+pip install -r requirements
+
+
+
+
+venv\Scripts\activate
+python my_django\manage.py runserver
+
+
+python my_django\manage.py startapp polls
