@@ -1,13 +1,40 @@
 
+
+pip install black Django djangorestframework "fastapi[standard]"
+pip freeze > requirements.txt
+
 py -m venv venv\ 
 venv\Scripts\activate
-pip install -r requirements
+pip install -r requirements.txt
 
 
 
 
-venv\Scripts\activate
 python my_django\manage.py runserver
 
 
 python my_django\manage.py startapp polls
+
+
+python -m fastapi dev my_fastapi\main.py
+
+
+
+npx create-react-app my-react-app
+cd my-react-app
+npm start
+
+# To install the latest version, from your project 
+# folder run the following from the terminal:
+npm i react@latest react-dom@latest
+
+
+npm install react
+npm install --legacy-peer-dep @diamondlightsource/sci-react-ui
+
+npx create-react-app my-sci-react-ui-app
+cd my-sci-react-ui-app
+npm install --legacy-peer-dep @diamondlightsource/sci-react-ui
+npm fund
+npm audit
+npm audit fix --force
